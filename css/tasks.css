@@ -1,0 +1,7 @@
+.tasks__content {
+    
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
+}
