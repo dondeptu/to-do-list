@@ -1,0 +1,16 @@
+.section {
+    background-color: #fff;
+    margin: 10px 0;
+    /* boxshadow? */
+}
+
+.section__header {
+    font-size: 21px;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.section__container {
+    padding: 20px;
+}

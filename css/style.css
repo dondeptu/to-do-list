@@ -11,5 +11,8 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: #ddd;
+    max-width: 900px;
+    padding: 20px;
     margin: 0 auto;
 }

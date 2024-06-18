@@ -1,0 +1,18 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+.form__button {
+    background-color: teal;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+.form__newTask {
+    border: 2px solid #ddd;
+    padding: 10px;
+    
+}
