@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "zrobić obiad",
-            done: false,
-        },
-        {
-            content: "kupić chleb",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -36,7 +27,6 @@
                 removeTask(index);
             });
         });
-
 
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
