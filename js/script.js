@@ -54,7 +54,7 @@
             htmlStrings += `
                 <li class="tasks__items js-tasks">
                     <button class="tasks__button js-done">
-                        ✔
+                        ${task.done ? "✔" : ""}
                     </button>
                     <span class="tasks__content ${task.done ? "tasks__content--done" : ""}">
                         ${task.content}
