@@ -1,7 +1,7 @@
 .section {
     background-color: #fff;
     margin: 10px 0;
-    /* boxshadow? */
+    box-shadow: 0 0 5px #afafaf;
 }
 
 .section__header {

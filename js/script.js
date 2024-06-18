@@ -48,10 +48,10 @@
     };
 
     const render = () => {
-        let htmlStrings = "";
+        let htmlTasksList = "";
 
         for (const task of tasks) {
-            htmlStrings += `
+            htmlTasksList += `
                 <li class="tasks__items js-tasks">
                     <button class="tasks__button js-done">
                         ${task.done ? "✔" : ""}
@@ -66,7 +66,7 @@
             `;
         }
 
-        document.querySelector(".js-tasks").innerHTML = htmlStrings;
+        document.querySelector(".js-tasks").innerHTML = htmlTasksList;
 
         bindEvents();
     };
@@ -80,6 +80,7 @@
             addNewTask(newTaskContent);
             newTaskElement.value = "";
         }
+        newTaskElement.focus();
     }
 
     const init = () => {
