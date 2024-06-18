@@ -4,6 +4,13 @@
     gap: 20px;
 }
 
+@media (max-width: 376px) {
+    .form {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
 .form__button {
     background-color: teal;
     color: #fff;
