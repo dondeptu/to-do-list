@@ -1,7 +1,17 @@
 .tasks__content {
-    
+    /* każde zadanie wygląda tak samo, taki sam styl */
 }
 
 .tasks__content--done {
     text-decoration: line-through;
+}
+
+.tasks__button {
+    /* przyciski wyglądają tak samo, różnią się jedynie kolorem
+       style przycisku done? -> kolor zielony
+    */
+}
+
+.tasks__button--remove {
+    /* kolor czerwony */
 }
