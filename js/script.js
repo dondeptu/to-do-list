@@ -51,7 +51,7 @@
 
         for (const task of tasks) {
             htmlTasksList += `
-                <li class="tasks__items js-tasks">
+                <li class="tasks__items js-task">
                     <button class="tasks__button js-done">
                         ${task.done ? "✔" : ""}
                     </button>
@@ -65,7 +65,7 @@
             `;
         }
 
-        document.querySelector(".js-tasks").innerHTML = htmlTasksList;
+        document.querySelector(".js-task").innerHTML = htmlTasksList;
 
         bindEvents();
     };
