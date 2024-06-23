@@ -30,3 +30,9 @@
     border: 2px solid #ddd;
     padding: 10px;
 }
+
+@media (max-width: 767px) {
+    .form__newTask {
+        min-width: 50%;
+    }
+}
