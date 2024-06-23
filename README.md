@@ -2,9 +2,9 @@
 
 # To do list
 
-Hi! This is a simple to do list website I created as a part of learning web aplications in pure Java Script.
+Hi! This is a simple to do list website I created as part of learning web applications in pure JavaScript.
 
-The user can write a task and press the button to write it down on the list. 
+The user can write a task and press the button to add it to the list. 
 In the application you can also tick a completed task and delete it.
 
 ## Demo
