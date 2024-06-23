@@ -27,12 +27,10 @@
 }
 
 .tasks__button:hover {
-    border: 1px solid #000;
     background-color: hsl(120, 100%, 30%);
 }
 
 .tasks__button:active {
-    border: 1px solid #000;
     background-color: hsl(120, 100%, 35%);
 }
 
