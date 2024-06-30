@@ -90,7 +90,7 @@
     };
 
     const renderButtons = () => {
-        const buttonsElement = document.querySelector(".js-buttonsContainer");
+        const buttonsElement = document.querySelector(".js-buttons");
 
         if (tasks.length === 0) {
             buttonsElement.innerHTML = "";
