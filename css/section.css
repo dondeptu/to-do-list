@@ -32,6 +32,7 @@
     background-color: transparent;
     color: teal;
     margin-left: 10px;
+    transition: 1s;
 }
 
 .section__buttons:hover {

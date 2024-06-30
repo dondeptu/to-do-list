@@ -28,6 +28,7 @@
     width: 20px;
     height: 20px;
     padding: 5px;
+    transition: 1s;
 }
 
 .tasks__button:hover {
@@ -43,9 +44,9 @@
 }
 
 .tasks__button--remove:hover {
-    background-color: hsl(0, 100%, 60%);
+    background-color: hsl(0, 100%, 65%);
 }
 
 .tasks__button--remove:active {
-    background-color: hsl(0, 100%, 70%);
+    background-color: hsl(0, 100%, 75%);
 }
