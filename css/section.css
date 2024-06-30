@@ -4,12 +4,20 @@
     box-shadow: 0 0 5px #afafaf;
 }
 
-.section__sectionHeader {
+.section__header {
     padding: 20px;
     margin: 0;
     border-bottom: 2px solid #ddd;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 
 .section__container {
@@ -22,9 +30,14 @@
     }
 }
 
-.section__header {
+.section__title {
     font-size: 21px;
     margin: 0;
+}
+
+.section__buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section__buttons {
@@ -40,7 +53,7 @@
 }
 
 .section__buttons:active {
-    color: hsl(180, 100%, 40%);   
+    color: hsl(180, 100%, 40%);
 }
 
 .section__buttons--hidden {
@@ -49,4 +62,11 @@
 
 .section__buttons:disabled {
     color: #ddd;
+}
+
+@media (max-width: 767px) {
+    .section__buttons {
+        margin: 10px;
+        flex-basis: 100%;
+    }
 }
