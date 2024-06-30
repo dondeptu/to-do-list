@@ -4,11 +4,12 @@
     box-shadow: 0 0 5px #afafaf;
 }
 
-.section__header {
-    font-size: 21px;
+.section__sectionHeader {
     padding: 20px;
     margin: 0;
     border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
 }
 
 .section__container {
@@ -19,4 +20,28 @@
     .section__container {
         padding: 15px;
     }
+}
+
+.section__header {
+    font-size: 21px;
+    margin: 0;
+}
+
+.section__buttons {
+    border: none;
+    background-color: transparent;
+    color: teal;
+    margin-left: 10px;
+}
+
+.section__buttons:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__buttons:active {
+    color: hsl(180, 100%, 40%);   
+}
+
+.section__buttons--hidden {
+    visibility: hidden;
 }

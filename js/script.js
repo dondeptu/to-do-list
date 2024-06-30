@@ -35,6 +35,14 @@
         render();
     };
 
+    const checkAllTaskDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+        render();
+    };
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -53,7 +61,7 @@
         });
     };
 
-    const render = () => {
+    const renderTask = () => {
         let htmlTasksList = "";
 
         for (const task of tasks) {
@@ -73,8 +81,34 @@
         }
 
         document.querySelector(".js-task").innerHTML = htmlTasksList;
+    };
+
+    const renderButtons = () => {
+        const buttonsElement = document.querySelector(".js-buttonsContainer");
+        console.log(tasks.length);
+        if (tasks.length === 0) {
+            buttonsElement.innerHTML = "";
+            return;
+        }
+
+        buttonsElement.innerHTML = `
+            <button class="section__buttons js-buttons">Ukryj ukończone</button>
+            <button class="section__buttons js-checkAllDone">Ukończ wszystkie</button>`;
+    };
+
+    const bindButtonsEvents = () => {
+        // TO DO: Jeśli lista zadań jest pusta to nie przypinaj event listenerów do przycisków.
+        const checkAllDoneButton = document.querySelector(".js-checkAllDone");
+
+        checkAllDoneButton.addEventListener("click", checkAllTaskDone);
+    };
+
+    const render = () => {
+        renderTask();
+        renderButtons();
 
         bindEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
