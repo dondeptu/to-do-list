@@ -93,7 +93,12 @@
 
         buttonsElement.innerHTML = `
             <button class="section__buttons js-buttons">Ukryj ukończone</button>
-            <button class="section__buttons js-checkAllDone">Ukończ wszystkie</button>`;
+            <button class="section__buttons js-checkAllDone"
+                ${tasks.every(({ done }) => done) ? "disabled" : ""}
+            >
+                Ukończ wszystkie
+            </button>
+            `;
     };
 
     const bindButtonsEvents = () => {

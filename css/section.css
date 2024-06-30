@@ -45,3 +45,7 @@
 .section__buttons--hidden {
     visibility: hidden;
 }
+
+.section__buttons:disabled {
+    color: #ddd;
+}
