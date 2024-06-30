@@ -85,7 +85,7 @@
 
     const renderButtons = () => {
         const buttonsElement = document.querySelector(".js-buttonsContainer");
-        console.log(tasks.length);
+
         if (tasks.length === 0) {
             buttonsElement.innerHTML = "";
             return;
@@ -97,10 +97,11 @@
     };
 
     const bindButtonsEvents = () => {
-        // TO DO: Jeśli lista zadań jest pusta to nie przypinaj event listenerów do przycisków.
         const checkAllDoneButton = document.querySelector(".js-checkAllDone");
 
-        checkAllDoneButton.addEventListener("click", checkAllTaskDone);
+        if (checkAllDoneButton) {
+            checkAllDoneButton.addEventListener("click", checkAllTaskDone);
+        }
     };
 
     const render = () => {
